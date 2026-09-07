@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
-    xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
     <ShortName>Portail Uniprot</ShortName>
     <Description>Chercher un fichier FASTA</Description>
     <InputEncoding>UTF-8</InputEncoding>
-    <Image height="16" width="16" type="image/x-icon">https://www.uniprot.org/favicon.ico</Image>
-    <Url type="text/html" method="get" template="https://rest.uniprot.org/uniprotkb/{searchTerms}.fasta"/>
-    <Url type="application/x-suggestions+json" method="get" template="https://rest.uniprot.org/uniprotkb/{searchTerms}"/>
-    <moz:SearchForm>https://rest.uniprot.org/uniprotkb</moz:SearchForm>
+    <Language>fr</Language>
+    <Url type="text/html" template="https://rest.uniprot.org/uniprotkb/{searchTerms}.fasta"/>
 </OpenSearchDescription>
